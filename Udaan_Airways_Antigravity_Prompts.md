@@ -161,7 +161,7 @@ IMPORTANT DESIGN RULES:
 SECTION 1: PRE-HEADER BAR
 ━━━━━━━━━━━━━━━━━━━━━━━━
 - Full-width dark navy strip (#0A1F5C)
-- LEFT: Phone icon + "+91-7982437302" in gold, clickable
+- LEFT: Phone icon + "+91-8796017652" in gold, clickable
 - RIGHT: Links — "Apply Jobs" | "Join Membership" | "Member Login" — white text, pipe separator
 - Far right: Small social icons (Facebook, Instagram, Twitter, LinkedIn) in white
 
@@ -274,7 +274,7 @@ RIGHT COLUMN — Text Content:
     ✓ Modern Fleet Safety Standards
     ✓ Comfortable Personalized Travel
     ✓ Easy Online Booking
-  - Call block (blue card): Phone icon + "Call Us Anytime" + "+91-7982437302" (gold, large)
+  - Call block (blue card): Phone icon + "Call Us Anytime" + "+91-8796017652" (gold, large)
   - Button: "Know More About Us" → about.html (gold button)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -588,7 +588,7 @@ Column 1 — Company:
   Logo: ✈ "Udaan Airways" (white, large)
   Tagline: "Travel Shine Airways Services India Pvt. Ltd. — NCT & MCA Certified"
   Address: G-69, G-Block Sector-63, Noida, UP – 201301
-  Phone: +91-7982437302
+  Phone: +91-8796017652
   Email Info: hr@udaanairways.com
   Email Career: hr@udaanairways.com
 
@@ -1437,7 +1437,7 @@ Card 2 — Email:
 Card 3 — Phone:
   Icon: 📞
   Label: "CALL US"
-  Phone: +91-7982437302
+  Phone: +91-8796017652
   Holiday Support: 0120-4439885
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1457,7 +1457,7 @@ Light blue background. 3 centered cards:
 Card 1: Customer Support
   AI Icon: "Customer support headphone icon, 24/7 call center, gold and blue, modern flat design"
   Title: "24x7 Customer Support"
-  Text: "+91-7982437302"
+  Text: "+91-8796017652"
   Sub: "Available round the clock"
 
 Card 2: Email Support
@@ -1492,7 +1492,7 @@ Sub: "Got questions? We have answers. Can't find yours? Contact us directly."
 LEFT COLUMN — 5 FAQs:
 
 Q1: "How can I book a flight with Udaan Airways?"
-A: "You can book a flight directly through our website using the flight search widget on the homepage. Select your origin, destination, date, and travellers, then choose your flight and complete payment. For assistance, call +91-7982437302."
+A: "You can book a flight directly through our website using the flight search widget on the homepage. Select your origin, destination, date, and travellers, then choose your flight and complete payment. For assistance, call +91-8796017652."
 
 Q2: "What is your refund/cancellation policy?"
 A: "Refund and cancellation policies vary based on the package or ticket type. Generally, cancellations made 48+ hours before travel may be eligible for partial refunds. Please refer to our Refund Policy page or contact support for specific package policies."
@@ -1518,7 +1518,7 @@ Q8: "Can I modify my travel dates after booking?"
 A: "Date modifications are subject to availability and may incur change fees. Contact our support team at least 48 hours before departure for modification requests."
 
 Q9: "What are your academy course fees?"
-A: "Academy course fees vary by course type and duration. Contact us at hr@udaanairways.com or call +91-7982437302 for current fee structures and enrollment details."
+A: "Academy course fees vary by course type and duration. Contact us at hr@udaanairways.com or call +91-8796017652 for current fee structures and enrollment details."
 
 Q10: "Do you offer franchise/partnership opportunities?"
 A: "Yes! Udaan Airways offers franchise opportunities for travel agents and entrepreneurs. Visit our Franchise page or register on our website to learn about partnership benefits."
@@ -1908,7 +1908,7 @@ AI Image background: "Travel collage — airplane, beach, mountains, city, adven
 Dark overlay. White text.
 H2: "Your Perfect Journey Starts Here"
 Sub: "Talk to our travel experts and get a personalized travel plan."
-2 Buttons: "Call Now: +91-7982437302" (gold) | "Send Enquiry" (outline) → contact.html
+2 Buttons: "Call Now: +91-8796017652" (gold) | "Send Enquiry" (outline) → contact.html
 
 PARTNER LOGOS + FOOTER (same as home page)
 ```

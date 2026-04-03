@@ -148,25 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentSlide);
     }, 5000);
 
-    // 7. BACK TO TOP BUTTON
-    const backToTopBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTopBtn?.classList.add('show');
-        } else {
-            backToTopBtn?.classList.remove('show');
-        }
-    });
-
-    if (backToTopBtn) {
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-
     // 8. FORM VALIDATION
     const forms = document.querySelectorAll('.contact-form');
     forms.forEach(form => {
@@ -201,4 +182,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 9. FLOATING CONTACT BUTTONS INJECTION
+    const injectButtons = () => {
+        const floatingDiv = document.createElement('div');
+        floatingDiv.className = 'floating-contact';
+        floatingDiv.innerHTML = `
+            <a href="https://wa.me/918796017652" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+918796017652" class="floating-btn call-btn" title="Call Us Now">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        `;
+        document.body.appendChild(floatingDiv);
+    };
+    injectButtons();
+
 });
+
