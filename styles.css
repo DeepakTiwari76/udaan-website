@@ -161,8 +161,8 @@ input, select, textarea, button {
 
 /* 4. PRE-HEADER BAR */
 .pre-header {
-    background: var(--primary-dark-blue);
-    color: var(--white);
+    background: rgb(167, 168, 170);
+    color: var(--dark-text);
     padding: 10px 0;
     font-size: 0.85rem;
 }
@@ -217,7 +217,7 @@ nav.navbar {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--white);
+    background: rgb(245, 247, 250);
     z-index: 1000;
     transition: var(--transition-fast);
 }
@@ -481,7 +481,7 @@ nav.navbar .container {
 
 /* 9. FOOTER */
 footer {
-    background: var(--primary-dark-blue);
+    background: rgba(33, 37, 41, 0.75);
     color: var(--white);
     padding-top: 80px;
 }
@@ -566,6 +566,7 @@ footer {
 .footer-bottom p { font-size: 0.85rem; color: #94a3b8; }
 
 .footer-badges { display: flex; align-items: center; gap: 15px; }
+.footer-badge-logo { height: 28px; width: auto; object-fit: contain; filter: brightness(1.1); }
 
 /* 10. ANIMATIONS */
 @keyframes fadeInUp {
@@ -792,4 +793,6 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+
 
