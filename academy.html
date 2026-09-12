@@ -18,27 +18,145 @@
 <body>
 
     <!-- SECTION 1: PRE-HEADER BAR -->
-    <section class="pre-header">
-        <div class="container">
-            <div class="pre-header-left">
-                <span><i class="fas fa-phone"></i> +91-8796017652</span>
-                <span class="d-none-mobile"><i class="fas fa-envelope"></i> hr@vayuairways.in</span>
-            </div>
-            <div class="pre-header-right">
-                <div class="pre-header-links">
-                    <a href="career.html">Apply Jobs</a> |
-                    <a href="#">Join Membership</a> |
-                    <a href="#">Member Login</a>
-                </div>
-                <div class="pre-header-socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+    <section class="vayu-preheader">
+    
+    <!-- Custom CSS for Pre-Header Hover Effects & Mobile Layout -->
+    <style>
+        .vayu-preheader {
+            background-color: #96997f; /* Deep Navy Dark Background */
+            color: #1f2123;
+            font-size: 0.825rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 0;
+        }
+
+        .vayu-preheader-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Left Side: Contact Information */
+        .vayu-preheader-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .vayu-preheader-contact a {
+            color: #020a14;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a i {
+            color: #38bdf8; /* Vibrant Sky Blue Icon Color */
+            font-size: 0.85rem;
+            transition: transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a:hover {
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .vayu-preheader-contact a:hover i {
+            transform: scale(1.15);
+        }
+
+        /* Right Side: Links & Membership */
+        .vayu-preheader-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vayu-preheader-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        /* Hover Effect on Links */
+        .vayu-preheader-links a:hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Highlighted Login / CTA Link */
+        .vayu-preheader-links a.vayu-highlight-link {
+            background-color: #0284c7;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-weight: 600;
+        }
+
+        .vayu-preheader-links a.vayu-highlight-link:hover {
+            background-color: #0369a1;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+        }
+
+        .vayu-link-divider {
+            color: #334155;
+            font-size: 0.75rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 640px) {
+            .vayu-preheader-container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .vayu-hide-mobile {
+                display: none !important;
+            }
+
+            .vayu-preheader-links {
+                gap: 4px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <div class="vayu-preheader-container">
+        
+        <!-- Left Section: Phone & Email -->
+        <div class="vayu-preheader-contact">
+            <a href="tel:+918796017652">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91-8796017652</span>
+            </a>
+            <a href="mailto:hr@vayuairways.in" class="vayu-hide-mobile">
+                <i class="fas fa-envelope"></i>
+                <span>hr@vayuairways.in</span>
+            </a>
         </div>
-    </section>
+
+        <!-- Right Section: Action Links -->
+        <div class="vayu-preheader-links">
+            <a href="career.html">Apply Jobs</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#">Join Membership</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#" class="vayu-highlight-link">Member Login</a>
+        </div>
+
+    </div>
+</section>
 
     <!-- SECTION 2: NAVBAR -->
     <nav class="navbar">
@@ -79,120 +197,410 @@
         </div>
     </nav>
 
+   <!-- ACADEMY SECTION WRAPPER -->
+<div class="vayu-academy-wrapper">
+
+    <!-- Custom CSS for Academy Layout, Animations & Mobile Responsiveness -->
+    <style>
+        .vayu-academy-wrapper {
+            font-family: inherit;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+
+        /* SECTION 3: ACADEMY HERO BANNER WITH BG IMAGE */
+        .vayu-academy-hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(3, 105, 161, 0.75)), 
+                        url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 100px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .vayu-academy-hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin: 0 0 12px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .vayu-academy-hero p {
+            font-size: 1.15rem;
+            color: #e0f2fe;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* SECTION 4: COURSE CARDS GRID */
+        .vayu-courses-section {
+            padding: 70px 0;
+            background: #f8fafc;
+        }
+
+        .vayu-course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 0 20px;
+        }
+
+        .vayu-course-card {
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vayu-course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 35px rgba(2, 132, 199, 0.15);
+            border-color: #38bdf8;
+        }
+
+        .vayu-course-img-box {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .vayu-course-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .vayu-course-card:hover .vayu-course-img-box img {
+            transform: scale(1.08);
+        }
+
+        .vayu-course-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .vayu-course-body h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+        }
+
+        .vayu-course-body p {
+            color: #64748b;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin: 0 0 20px 0;
+            flex-grow: 1;
+        }
+
+        .vayu-course-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #0369a1;
+        }
+
+        .vayu-course-btn {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 11px;
+            background: #ffffff;
+            color: #0284c7;
+            border: 2px solid #0284c7;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .vayu-course-card:hover .vayu-course-btn {
+            background: #0284c7;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+
+        /* SECTION 5: WHY CHOOSE ACADEMY */
+        .vayu-why-academy {
+            padding: 70px 0;
+            background: #0f172a;
+            color: #ffffff;
+        }
+
+        .vayu-why-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .vayu-why-img-box {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .vayu-why-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .vayu-why-img-box:hover img {
+            transform: scale(1.05);
+        }
+
+        .vayu-why-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 35px 0;
+        }
+
+        .vayu-why-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            margin-bottom: 15px;
+            transition: transform 0.25s ease;
+        }
+
+        .vayu-why-list li:hover {
+            transform: translateX(6px);
+            color: #ffffff;
+        }
+
+        .vayu-why-list i {
+            color: #38bdf8;
+            font-size: 1.1rem;
+        }
+
+        .vayu-btn-cta {
+            display: inline-block;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.95rem;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+        }
+
+        .vayu-btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.5);
+            background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+        }
+
+        /* SECTION 6: BROCHURE CTA CARD */
+        .vayu-brochure-section {
+            padding: 60px 0;
+            background: #ffffff;
+        }
+
+        .vayu-brochure-card {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            border-radius: 20px;
+            padding: 50px 20px;
+            text-align: center;
+            border: 1px solid #7dd3fc;
+            box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08);
+        }
+
+        .vayu-brochure-card h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0c4a6e;
+            margin: 0 0 10px 0;
+        }
+
+        .vayu-brochure-card p {
+            color: #0369a1;
+            font-size: 1rem;
+            max-width: 550px;
+            margin: 0 auto 25px auto;
+        }
+
+        /* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
+        @media (max-width: 992px) {
+            .vayu-course-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .vayu-why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .vayu-academy-hero {
+                padding: 70px 15px;
+            }
+            .vayu-academy-hero h1 {
+                font-size: 2rem;
+            }
+            .vayu-course-grid {
+                grid-template-columns: 1fr;
+            }
+            .vayu-brochure-card {
+                padding: 35px 15px;
+            }
+            .vayu-brochure-card h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
     <!-- SECTION 3: HERO BANNER -->
-    <section class="academy-hero-section">
-        <div class="container text-center">
-            <h1 class="hero-title white">Aviation Educational Excellence</h1>
-            <p class="hero-subtitle white">Shape your dreams into a profession with the Vayu Airways Academy.</p>
+    <section class="vayu-academy-hero">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h1>Aviation Educational Excellence</h1>
+            <p>Shape your dreams into a thriving profession with industry-grade training at Vayu Airways Academy.</p>
         </div>
     </section>
 
-    <!-- SECTION 4: COURSE CATEGORIES (Card Grid) -->
-    <section class="section-padding reveal-up" id="courses">
-        <div class="container">
-            <div class="text-center">
-                <span class="label">OUR PROGRAMS</span>
-                <h2 class="section-title center">Choose Your Career Path</h2>
-                <p class="section-subtitle center">Industry-verified training modules for the next generation of
-                    aviation leaders.</p>
+    <!-- SECTION 4: COURSE CATEGORIES -->
+    <section class="vayu-courses-section" id="courses">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto; padding: 0 20px;">
+            <span style="display: inline-block; padding: 5px 14px; background: #e0f2fe; color: #0284c7; font-size: 0.75rem; font-weight: 700; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
+                OUR PROGRAMS
+            </span>
+            <h2 style="font-size: 2.2rem; font-weight: 800; color: #0f172a; margin: 0 0 10px 0;">
+                Choose Your Career Path
+            </h2>
+            <div style="width: 50px; height: 3px; background: #0284c7; margin: 0 auto 12px; border-radius: 2px;"></div>
+            <p style="color: #64748b; font-size: 0.95rem; margin: 0;">
+                Industry-verified training modules designed for the next generation of aviation leaders.
+            </p>
+        </div>
+
+        <div class="vayu-course-grid">
+            
+            <!-- Course 1 -->
+            <div class="vayu-course-card">
+                <div class="vayu-course-img-box">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Aviation Management">
+                </div>
+                <div class="vayu-course-body">
+                    <h3>Diploma in Aviation Management</h3>
+                    <p>In-depth knowledge of airport operations, flight scheduling, and ground handling management.</p>
+                    <div class="vayu-course-meta">
+                        <span><i class="fas fa-clock"></i> 6 Months</span>
+                        <span><i class="fas fa-graduation-cap"></i> Advanced</span>
+                    </div>
+                    <a href="contact.html" class="vayu-course-btn">Course Details</a>
+                </div>
             </div>
 
-            <div class="card-grid">
-                <!-- Course 1 -->
-                <div class="card course-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Aviation Management">
-                    </div>
-                    <div class="course-details">
-                        <h3>Diploma in Aviation Management</h3>
-                        <p>In-depth knowledge of airport operations, flight scheduling, and ground handling management.
-                        </p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 6 Months</span>
-                            <span><i class="fas fa-graduation-cap"></i> Advanced</span>
-                        </div>
-                        <a href="contact.html" class="btn btn-outline full-width">Course Details</a>
-                    </div>
+            <!-- Course 2 -->
+            <div class="vayu-course-card">
+                <div class="vayu-course-img-box">
+                    <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cabin Crew">
                 </div>
-                <!-- Course 2 -->
-                <div class="card course-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Cabin Crew">
+                <div class="vayu-course-body">
+                    <h3>Cabin Crew Personality & Skills</h3>
+                    <p>Grooming, communication, passenger safety, and hospitality training for aspiring flight attendants.</p>
+                    <div class="vayu-course-meta">
+                        <span><i class="fas fa-clock"></i> 3 Months</span>
+                        <span><i class="fas fa-user-tie"></i> Professional</span>
                     </div>
-                    <div class="course-details">
-                        <h3>Cabin Crew Personality & Skills</h3>
-                        <p>Grooming, communication, passenger safety, and hospitality training for aspiring flight
-                            attendants.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 3 Months</span>
-                            <span><i class="fas fa-user-tie"></i> Professional</span>
-                        </div>
-                        <a href="contact.html" class="btn btn-outline full-width">Course Details</a>
-                    </div>
+                    <a href="contact.html" class="vayu-course-btn">Course Details</a>
                 </div>
-                <!-- Course 3 -->
-                <div class="card course-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Ground Staff">
-                    </div>
-                    <div class="course-details">
-                        <h3>Ground Staff / Operation Training</h3>
-                        <p>Specialized training for passenger handling, security procedures, and ticketing systems.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 4 Months</span>
-                            <span><i class="fas fa-clipboard-check"></i> Hands-on</span>
-                        </div>
-                        <a href="contact.html" class="btn btn-outline full-width">Course Details</a>
-                    </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="vayu-course-card">
+                <div class="vayu-course-img-box">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ground Staff">
                 </div>
+                <div class="vayu-course-body">
+                    <h3>Ground Staff / Operations Training</h3>
+                    <p>Specialized practical training for passenger handling, security procedures, and ticketing systems.</p>
+                    <div class="vayu-course-meta">
+                        <span><i class="fas fa-clock"></i> 4 Months</span>
+                        <span><i class="fas fa-clipboard-check"></i> Hands-on</span>
+                    </div>
+                    <a href="contact.html" class="vayu-course-btn">Course Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: WHY CHOOSE ACADEMY -->
+    <section class="vayu-why-academy">
+        <div class="vayu-why-grid">
+            <div class="vayu-why-img-box">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aviation Training Session">
+            </div>
+            
+            <div>
+                <span style="display: inline-block; padding: 5px 14px; background: rgba(56, 189, 248, 0.15); color: #38bdf8; font-size: 0.75rem; font-weight: 700; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
+                    WHY CHOOSE US
+                </span>
+                <h2 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin: 0 0 15px 0; line-height: 1.25;">
+                    Why Study with Vayu Airways Academy?
+                </h2>
+
+                <ul class="vayu-why-list">
+                    <li><i class="fas fa-check-circle"></i> 100% Placement Support & Mock Interview Practice</li>
+                    <li><i class="fas fa-check-circle"></i> Specialized Training by Senior Aviation Captains & Staff</li>
+                    <li><i class="fas fa-check-circle"></i> Complete Personality Development & Grooming Training</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time Airport & Ground Operations Exposure</li>
+                    <li><i class="fas fa-check-circle"></i> Industry recognized ISO-certified course certificate</li>
+                </ul>
+
+                <a href="contact.html" class="vayu-btn-cta">
+                    Book Counselling Session &rarr;
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 5: WHY CHOOSE ACADEMY (Split Section) -->
-    <section class="section-padding bg-dark reveal-up text-white">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-images">
-                    <div class="training-img card">
-                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Training Session">
-                    </div>
-                </div>
-                <div class="about-content">
-                    <h2 class="section-title text-white">Why Study with Vayu Airways Academy?</h2>
-                    <ul class="about-checks academy-list">
-                        <li><i class="fas fa-check-circle"></i> 100% Placement Support and Mock Interviews</li>
-                        <li><i class="fas fa-check-circle"></i> Training by Experienced Aviation Professionals</li>
-                        <li><i class="fas fa-check-circle"></i> Personality Development & Grooming Training</li>
-                        <li><i class="fas fa-check-circle"></i> Real-time Ground Operations Exposure</li>
-                        <li><i class="fas fa-check-circle"></i> ISO-certified training certificate</li>
-                    </ul>
-                    <div class="academy-cta mt-40">
-                        <a href="contact.html" class="btn btn-primary">Book Counselling Session</a>
-                    </div>
-                </div>
+    <!-- SECTION 6: DOWNLOAD BROCHURE CTA -->
+    <section class="vayu-brochure-section" id="brochure">
+        <div style="padding: 0 20px;">
+            <div class="vayu-brochure-card">
+                <h2>Download Academy Brochure</h2>
+                <p>Get detailed information about all our aviation courses, batch timings, and fee structure in one PDF.</p>
+                <a href="#" class="vayu-btn-cta" style="background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);">
+                    <i class="fas fa-download" style="margin-right: 8px;"></i> Get PDF Brochure
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 6: DOWNLOAD BROCHURE (CTA Section) -->
-    <section class="section-padding reveal-up" id="brochure">
-        <div class="container">
-            <div class="brochure-card card text-center">
-                <div class="brochure-info">
-                    <h2 class="section-title center">Download Academy Brochure</h2>
-                    <p class="section-subtitle center">Get detailed information about all our aviation courses and fee
-                        structure.</p>
-                    <a href="#" class="btn btn-primary" style="margin-top: 25px;"><i class="fas fa-download"></i> Get
-                        PDF Brochure</a>
-                </div>
-            </div>
-        </div>
-    </section>
+</div>
 
     <!-- FOOTER -->
     <footer>

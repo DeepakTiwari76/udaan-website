@@ -15,27 +15,145 @@
 <body>
 
     <!-- SECTION 1: PRE-HEADER BAR -->
-    <section class="pre-header">
-        <div class="container">
-            <div class="pre-header-left">
-                <span><i class="fas fa-phone"></i> +91-8796017652</span>
-                <span class="d-none-mobile"><i class="fas fa-envelope"></i> hr@vayuairways.in</span>
-            </div>
-            <div class="pre-header-right">
-                <div class="pre-header-links">
-                    <a href="career.html">Apply Jobs</a> |
-                    <a href="#">Join Membership</a> |
-                    <a href="#">Member Login</a>
-                </div>
-                <div class="pre-header-socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+   <section class="vayu-preheader">
+    
+    <!-- Custom CSS for Pre-Header Hover Effects & Mobile Layout -->
+    <style>
+        .vayu-preheader {
+            background-color: #96997f; /* Deep Navy Dark Background */
+            color: #1f2123;
+            font-size: 0.825rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 0;
+        }
+
+        .vayu-preheader-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Left Side: Contact Information */
+        .vayu-preheader-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .vayu-preheader-contact a {
+            color: #020a14;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a i {
+            color: #38bdf8; /* Vibrant Sky Blue Icon Color */
+            font-size: 0.85rem;
+            transition: transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a:hover {
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .vayu-preheader-contact a:hover i {
+            transform: scale(1.15);
+        }
+
+        /* Right Side: Links & Membership */
+        .vayu-preheader-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vayu-preheader-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        /* Hover Effect on Links */
+        .vayu-preheader-links a:hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Highlighted Login / CTA Link */
+        .vayu-preheader-links a.vayu-highlight-link {
+            background-color: #0284c7;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-weight: 600;
+        }
+
+        .vayu-preheader-links a.vayu-highlight-link:hover {
+            background-color: #0369a1;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+        }
+
+        .vayu-link-divider {
+            color: #334155;
+            font-size: 0.75rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 640px) {
+            .vayu-preheader-container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .vayu-hide-mobile {
+                display: none !important;
+            }
+
+            .vayu-preheader-links {
+                gap: 4px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <div class="vayu-preheader-container">
+        
+        <!-- Left Section: Phone & Email -->
+        <div class="vayu-preheader-contact">
+            <a href="tel:+918796017652">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91-8796017652</span>
+            </a>
+            <a href="mailto:hr@vayuairways.in" class="vayu-hide-mobile">
+                <i class="fas fa-envelope"></i>
+                <span>hr@vayuairways.in</span>
+            </a>
         </div>
-    </section>
+
+        <!-- Right Section: Action Links -->
+        <div class="vayu-preheader-links">
+            <a href="career.html">Apply Jobs</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#">Join Membership</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#" class="vayu-highlight-link">Member Login</a>
+        </div>
+
+    </div>
+</section>
 
     <!-- SECTION 2: NAVBAR -->
     <nav class="navbar">

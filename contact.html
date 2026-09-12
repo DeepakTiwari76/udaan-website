@@ -18,27 +18,145 @@
 <body>
 
     <!-- SECTION 1: PRE-HEADER BAR -->
-    <section class="pre-header">
-        <div class="container">
-            <div class="pre-header-left">
-                <span><i class="fas fa-phone"></i> +91-8796017652</span>
-                <span class="d-none-mobile"><i class="fas fa-envelope"></i> hr@vayuairways.in</span>
-            </div>
-            <div class="pre-header-right">
-                <div class="pre-header-links">
-                    <a href="career.html">Apply Jobs</a> |
-                    <a href="#">Join Membership</a> |
-                    <a href="#">Member Login</a>
-                </div>
-                <div class="pre-header-socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+    <section class="vayu-preheader">
+    
+    <!-- Custom CSS for Pre-Header Hover Effects & Mobile Layout -->
+    <style>
+        .vayu-preheader {
+            background-color: #96997f; /* Deep Navy Dark Background */
+            color: #1f2123;
+            font-size: 0.825rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 0;
+        }
+
+        .vayu-preheader-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Left Side: Contact Information */
+        .vayu-preheader-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .vayu-preheader-contact a {
+            color: #020a14;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a i {
+            color: #38bdf8; /* Vibrant Sky Blue Icon Color */
+            font-size: 0.85rem;
+            transition: transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a:hover {
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .vayu-preheader-contact a:hover i {
+            transform: scale(1.15);
+        }
+
+        /* Right Side: Links & Membership */
+        .vayu-preheader-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vayu-preheader-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        /* Hover Effect on Links */
+        .vayu-preheader-links a:hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Highlighted Login / CTA Link */
+        .vayu-preheader-links a.vayu-highlight-link {
+            background-color: #0284c7;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-weight: 600;
+        }
+
+        .vayu-preheader-links a.vayu-highlight-link:hover {
+            background-color: #0369a1;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+        }
+
+        .vayu-link-divider {
+            color: #334155;
+            font-size: 0.75rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 640px) {
+            .vayu-preheader-container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .vayu-hide-mobile {
+                display: none !important;
+            }
+
+            .vayu-preheader-links {
+                gap: 4px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <div class="vayu-preheader-container">
+        
+        <!-- Left Section: Phone & Email -->
+        <div class="vayu-preheader-contact">
+            <a href="tel:+918796017652">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91-8796017652</span>
+            </a>
+            <a href="mailto:hr@vayuairways.in" class="vayu-hide-mobile">
+                <i class="fas fa-envelope"></i>
+                <span>hr@vayuairways.in</span>
+            </a>
         </div>
-    </section>
+
+        <!-- Right Section: Action Links -->
+        <div class="vayu-preheader-links">
+            <a href="career.html">Apply Jobs</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#">Join Membership</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#" class="vayu-highlight-link">Member Login</a>
+        </div>
+
+    </div>
+</section>
 
     <!-- SECTION 2: NAVBAR -->
     <nav class="navbar">
@@ -78,104 +196,537 @@
         </div>
     </nav>
 
+   <!-- MODERN UPGRADED CONTACT SECTION -->
+<div class="vayu-contact-wrapper">
+
+    <!-- CSS Styling, Micro-Interactions and Responsive Queries -->
+    <style>
+        .vayu-contact-wrapper {
+            font-family: inherit;
+            color: #1e293b;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* HERO SECTION */
+        .vayu-contact-hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(2, 132, 199, 0.80)),
+                        url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 100px 20px 80px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .vayu-contact-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 0 0 12px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .vayu-contact-hero p {
+            font-size: 1.15rem;
+            color: #e0f2fe;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* CONTACT CARDS GRID */
+        .vayu-contact-cards-sec {
+            max-width: 1200px;
+            margin: -40px auto 0;
+            padding: 0 20px 60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .vayu-card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .vayu-contact-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vayu-contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #0284c7, #38bdf8);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .vayu-contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 35px rgba(2, 132, 199, 0.12);
+            border-color: #7dd3fc;
+        }
+
+        .vayu-contact-card:hover::before {
+            opacity: 1;
+        }
+
+        .vayu-contact-icon {
+            width: 65px;
+            height: 65px;
+            background: #e0f2fe;
+            color: #0284c7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin: 0 auto 20px;
+            transition: all 0.4s ease;
+        }
+
+        .vayu-contact-card:hover .vayu-contact-icon {
+            background: #0284c7;
+            color: #ffffff;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .vayu-contact-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+        }
+
+        .vayu-contact-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .vayu-contact-card p a {
+            color: #64748b;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .vayu-contact-card p a:hover {
+            color: #0284c7;
+        }
+
+        /* FORM & MAP SPLIT SECTION */
+        .vayu-main-contact-sec {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 20px 80px;
+        }
+
+        .vayu-split-layout {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .vayu-form-box {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+        }
+
+        .vayu-form-box h2 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin: 0 0 8px 0;
+        }
+
+        .vayu-form-box p.subtitle {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+
+        .vayu-form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .vayu-form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .vayu-form-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .vayu-form-group input,
+        .vayu-form-group select,
+        .vayu-form-group textarea {
+            width: 100%;
+            padding: 13px 16px;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            color: #0f172a;
+            outline: none;
+            background: #f8fafc;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .vayu-form-group input:focus,
+        .vayu-form-group select:focus,
+        .vayu-form-group textarea:focus {
+            background: #ffffff;
+            border-color: #0284c7;
+            box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15);
+        }
+
+        .vayu-btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(2, 132, 199, 0.25);
+        }
+
+        .vayu-btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(2, 132, 199, 0.4);
+            background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+        }
+
+        /* SIDEBAR (MAP & SOCIAL) */
+        .vayu-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .vayu-map-card {
+            position: relative;
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+            flex: 1;
+            min-height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vayu-map-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.25;
+            transition: transform 0.6s ease;
+        }
+
+        .vayu-map-card:hover .vayu-map-bg {
+            transform: scale(1.08);
+        }
+
+        .vayu-map-overlay {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            margin: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .vayu-map-pin {
+            width: 50px;
+            height: 50px;
+            background: #ef4444;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin: 0 auto 12px;
+            animation: vayuPulse 2s infinite;
+        }
+
+        @keyframes vayuPulse {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        .vayu-map-overlay h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 4px 0;
+        }
+
+        .vayu-map-overlay p {
+            color: #64748b;
+            font-size: 0.85rem;
+            margin: 0 0 15px 0;
+        }
+
+        .vayu-btn-outline-sm {
+            display: inline-block;
+            padding: 8px 18px;
+            border: 2px solid #0284c7;
+            color: #0284c7;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .vayu-btn-outline-sm:hover {
+            background: #0284c7;
+            color: #ffffff;
+        }
+
+        .vayu-social-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+            text-align: center;
+        }
+
+        .vayu-social-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 6px 0;
+        }
+
+        .vayu-social-card p {
+            color: #64748b;
+            font-size: 0.85rem;
+            margin: 0 0 20px 0;
+        }
+
+        .vayu-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .vayu-social-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: #f1f5f9;
+            color: #475569;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .vayu-social-btn.fb:hover { background: #1877f2; color: #ffffff; transform: translateY(-3px); }
+        .vayu-social-btn.insta:hover { background: #e4405f; color: #ffffff; transform: translateY(-3px); }
+        .vayu-social-btn.tw:hover { background: #1da1f2; color: #ffffff; transform: translateY(-3px); }
+        .vayu-social-btn.ln:hover { background: #0a66c2; color: #ffffff; transform: translateY(-3px); }
+        .vayu-social-btn.wa:hover { background: #25d366; color: #ffffff; transform: translateY(-3px); }
+
+        /* RESPONSIVE MEDIA QUERIES */
+        @media (max-width: 992px) {
+            .vayu-split-layout {
+                grid-template-columns: 1fr;
+            }
+            .vayu-card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .vayu-card-grid {
+                grid-template-columns: 1fr;
+            }
+            .vayu-contact-hero {
+                padding: 70px 20px 60px;
+            }
+            .vayu-contact-hero h1 {
+                font-size: 2.1rem;
+            }
+            .vayu-form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            .vayu-form-box {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+
     <!-- SECTION 3: HERO BANNER -->
-    <section class="contact-hero-section">
-        <div class="container text-center">
-            <h1 class="hero-title white">Get In Touch</h1>
-            <p class="hero-subtitle white">We're here to help you plan your next perfect mission or vacation.</p>
-        </div>
+    <section class="vayu-contact-hero">
+        <h1>Get In Touch</h1>
+        <p>We are here to help you plan your next perfect trip, business mission, or dream vacation.</p>
     </section>
 
     <!-- SECTION 4: CONTACT INFO CARDS -->
-    <section class="section-padding reveal-up" id="contact-info">
-        <div class="container">
-            <div class="card-grid">
-                <div class="card contact-card">
-                    <div class="contact-icon"><i class="fas fa-map-marked-alt"></i></div>
-                    <h3>Our Headquarters</h3>
-                    <p>First Floor, H-69, Sector-63, Noida,<br>Uttar Pradesh 201301, India</p>
+    <section class="vayu-contact-cards-sec" id="contact-info">
+        <div class="vayu-card-grid">
+            
+            <div class="vayu-contact-card">
+                <div class="vayu-contact-icon">
+                    <i class="fas fa-map-marked-alt"></i>
                 </div>
-                <div class="card contact-card">
-                    <div class="contact-icon"><i class="fas fa-phone-volume"></i></div>
-                    <h3>Call & WhatsApp</h3>
-                    <p>Sales: +91-8796017652<br>WhatsApp: +91-8796017652</p>
-                </div>
-                <div class="card contact-card">
-                    <div class="contact-icon"><i class="fas fa-envelope-open-text"></i></div>
-                    <h3>Official Email</h3>
-                    <p>General: info@vayuairways.in<br>Career: hr@vayuairways.in</p>
-                </div>
+                <h3>Our Headquarters</h3>
+                <p>First Floor, H-69, Sector-63, Noida,<br>Uttar Pradesh 201301, India</p>
             </div>
+
+            <div class="vayu-contact-card">
+                <div class="vayu-contact-icon">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <h3>Call &amp; WhatsApp</h3>
+                <p>
+                    Sales: <a href="tel:+918796017652">+91-8796017652</a><br>
+                    WhatsApp: <a href="https://wa.me/918796017652" target="_blank">+91-8796017652</a>
+                </p>
+            </div>
+
+            <div class="vayu-contact-card">
+                <div class="vayu-contact-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h3>Official Email</h3>
+                <p>
+                    General: <a href="mailto:info@vayuairways.in">info@vayuairways.in</a><br>
+                    Career: <a href="mailto:hr@vayuairways.in">hr@vayuairways.in</a>
+                </p>
+            </div>
+
         </div>
     </section>
 
-    <!-- SECTION 5: CONTACT FORM & MAP (Split Grid) -->
-    <section class="section-padding bg-light reveal-up">
-        <div class="container">
-            <div class="contact-grid-layout">
-                <div class="contact-form-box card">
-                    <h2 class="section-title">Send a Query</h2>
-                    <p class="mb-30">Drop us a message and our travel planners will get back to you within 24 hours.</p>
+    <!-- SECTION 5: CONTACT FORM & MAP (SPLIT LAYOUT) -->
+    <section class="vayu-main-contact-sec">
+        <div class="vayu-split-layout">
+            
+            <!-- Form Box -->
+            <div class="vayu-form-box">
+                <h2>Send a Query</h2>
+                <p class="subtitle">Drop us a message and our travel planners will get back to you within 24 hours.</p>
 
-                    <form class="main-contact-form">
-                        <div class="form-row">
-                            <div class="form-group flex-1">
-                                <label>Full Name</label>
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group flex-1">
-                                <label>Phone Number</label>
-                                <input type="tel" placeholder="Your Phone" required>
-                            </div>
+                <form class="vayu-main-form" action="#" method="POST">
+                    <div class="vayu-form-row">
+                        <div class="vayu-form-group">
+                            <label for="vayu-name">Full Name</label>
+                            <input type="text" id="vayu-name" placeholder="John Doe" required>
                         </div>
-                        <div class="form-group">
-                            <label>Service Interested In</label>
-                            <select>
-                                <option>Flight Booking</option>
-                                <option>Tour Package</option>
-                                <option>Academy Enquiry</option>
-                                <option>Career Opportunity</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Your Message</label>
-                            <textarea rows="4" placeholder="How can we help you?"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary full-width">Submit Message</button>
-                    </form>
-                </div>
-
-                <div class="contact-map-box">
-                    <div class="map-container card">
-                        <!-- Placeholder for Map -->
-                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Map Location"
-                            style="width:100%; height:100%; object-fit: cover; opacity: 0.1; position: absolute; top:0; left:0;">
-                        <div class="map-overlay">
-                            <div class="map-pin"><i class="fas fa-map-marker-alt"></i></div>
-                            <h4>Visit Us at Our Office</h4>
-                            <p>Sector-63, Noida Hub</p>
-                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-sm">Get
-                                Directions</a>
+                        <div class="vayu-form-group">
+                            <label for="vayu-phone">Phone Number</label>
+                            <input type="tel" id="vayu-phone" placeholder="+91 98765 43210" required>
                         </div>
                     </div>
 
-                    <div class="social-connect card mt-20">
-                        <h3>Connect Digitally</h3>
-                        <p>Join our 8,000+ member travel community on social media.</p>
-                        <div class="pre-header-socials" style="margin-top: 20px;">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        </div>
+                    <div class="vayu-form-group">
+                        <label for="vayu-service">Service Interested In</label>
+                        <select id="vayu-service">
+                            <option value="flight">Flight Booking</option>
+                            <option value="tour">Tour Package</option>
+                            <option value="academy">Academy Enquiry</option>
+                            <option value="career">Career Opportunity</option>
+                            <option value="others">Others</option>
+                        </select>
                     </div>
-                </div>
+
+                    <div class="vayu-form-group">
+                        <label for="vayu-msg">Your Message</label>
+                        <textarea id="vayu-msg" rows="4" placeholder="How can we help you today?"></textarea>
+                    </div>
+
+                    <button type="submit" class="vayu-btn-submit">Submit Message &rarr;</button>
+                </form>
             </div>
+
+            <!-- Sidebar (Map & Socials) -->
+            <div class="vayu-sidebar">
+                
+                <!-- Map Card -->
+                <div class="vayu-map-card">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Map Preview" class="vayu-map-bg">
+                    
+                    <div class="vayu-map-overlay">
+                        <div class="vayu-map-pin">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Visit Our Office</h4>
+                        <p>Sector-63, Noida Hub, India</p>
+                        <a href="https://maps.google.com" target="_blank" class="vayu-btn-outline-sm">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social Connect Card -->
+                <div class="vayu-social-card">
+                    <h3>Connect Digitally</h3>
+                    <p>Join our 8,000+ member travel community on social media.</p>
+                    
+                    <div class="vayu-social-links">
+                        <a href="#" class="vayu-social-btn fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="vayu-social-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="vayu-social-btn tw" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="vayu-social-btn ln" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="vayu-social-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
+
+</div>
 
     <!-- FOOTER -->
     <footer>

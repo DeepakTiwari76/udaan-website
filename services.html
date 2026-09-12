@@ -15,27 +15,145 @@
 <body>
 
     <!-- SECTION 1: PRE-HEADER BAR -->
-    <section class="pre-header">
-        <div class="container">
-            <div class="pre-header-left">
-                <span><i class="fas fa-phone"></i> +91-8796017652</span>
-                <span class="d-none-mobile"><i class="fas fa-envelope"></i> hr@vayuairways.in</span>
-            </div>
-            <div class="pre-header-right">
-                <div class="pre-header-links">
-                    <a href="career.html">Apply Jobs</a> |
-                    <a href="#">Join Membership</a> |
-                    <a href="#">Member Login</a>
-                </div>
-                <div class="pre-header-socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+    <section class="vayu-preheader">
+    
+    <!-- Custom CSS for Pre-Header Hover Effects & Mobile Layout -->
+    <style>
+        .vayu-preheader {
+            background-color: #96997f; /* Deep Navy Dark Background */
+            color: #1f2123;
+            font-size: 0.825rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 0;
+        }
+
+        .vayu-preheader-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Left Side: Contact Information */
+        .vayu-preheader-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .vayu-preheader-contact a {
+            color: #020a14;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a i {
+            color: #38bdf8; /* Vibrant Sky Blue Icon Color */
+            font-size: 0.85rem;
+            transition: transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a:hover {
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .vayu-preheader-contact a:hover i {
+            transform: scale(1.15);
+        }
+
+        /* Right Side: Links & Membership */
+        .vayu-preheader-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vayu-preheader-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        /* Hover Effect on Links */
+        .vayu-preheader-links a:hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Highlighted Login / CTA Link */
+        .vayu-preheader-links a.vayu-highlight-link {
+            background-color: #0284c7;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-weight: 600;
+        }
+
+        .vayu-preheader-links a.vayu-highlight-link:hover {
+            background-color: #0369a1;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+        }
+
+        .vayu-link-divider {
+            color: #334155;
+            font-size: 0.75rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 640px) {
+            .vayu-preheader-container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .vayu-hide-mobile {
+                display: none !important;
+            }
+
+            .vayu-preheader-links {
+                gap: 4px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <div class="vayu-preheader-container">
+        
+        <!-- Left Section: Phone & Email -->
+        <div class="vayu-preheader-contact">
+            <a href="tel:+918796017652">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91-8796017652</span>
+            </a>
+            <a href="mailto:hr@vayuairways.in" class="vayu-hide-mobile">
+                <i class="fas fa-envelope"></i>
+                <span>hr@vayuairways.in</span>
+            </a>
         </div>
-    </section>
+
+        <!-- Right Section: Action Links -->
+        <div class="vayu-preheader-links">
+            <a href="career.html">Apply Jobs</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#">Join Membership</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#" class="vayu-highlight-link">Member Login</a>
+        </div>
+
+    </div>
+</section>
 
     <!-- SECTION 2: NAVBAR -->
     <nav class="navbar">
@@ -75,281 +193,599 @@
         </div>
     </nav>
 
+   <!-- SERVICES SECTION WRAPPER -->
+<div class="vayu-services-wrapper">
+
+    <!-- Embedded CSS for Styling, Hover Effects, and Full Mobile Responsiveness -->
+    <style>
+        .vayu-services-wrapper {
+            font-family: inherit;
+            color: #1e293b;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* HERO SECTION */
+        .vayu-svc-hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(2, 132, 199, 0.75)),
+                        url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 100px 20px 80px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .vayu-svc-hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .vayu-svc-hero p {
+            font-size: 1.15rem;
+            color: #e0f2fe;
+            margin: 0 0 15px 0;
+        }
+
+        .vayu-breadcrumbs {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: #f1f5f9;
+        }
+
+        /* MAIN SERVICES (ALTERNATING CARDS) */
+        .vayu-main-svc-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 70px 20px;
+        }
+
+        .vayu-svc-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 35px;
+            margin-bottom: 40px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+            transition: all 0.35s ease;
+        }
+
+        .vayu-svc-row:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px rgba(2, 132, 199, 0.12);
+            border-color: #7dd3fc;
+        }
+
+        .vayu-svc-row.reverse {
+            direction: rtl;
+        }
+
+        .vayu-svc-row.reverse .vayu-svc-content {
+            direction: ltr;
+        }
+
+        .vayu-svc-content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 12px 0;
+        }
+
+        .vayu-svc-content p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+        }
+
+        .vayu-svc-checks {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 15px;
+        }
+
+        .vayu-svc-checks li {
+            font-size: 0.875rem;
+            color: #334155;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vayu-svc-checks i {
+            color: #0284c7;
+        }
+
+        .vayu-svc-img-box {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 280px;
+        }
+
+        .vayu-svc-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .vayu-svc-row:hover .vayu-svc-img-box img {
+            transform: scale(1.08);
+        }
+
+        .vayu-btn-primary {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #0284c7;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .vayu-btn-primary:hover {
+            background: #0369a1;
+            box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+        }
+
+        /* ADDITIONAL SERVICES (ICON GRID) */
+        .vayu-add-svc-section {
+            background: #ffffff;
+            padding: 70px 20px;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .vayu-grid-4 {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .vayu-icon-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.35s ease;
+        }
+
+        .vayu-icon-card:hover {
+            background: #ffffff;
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+            box-shadow: 0 15px 30px rgba(2, 132, 199, 0.1);
+        }
+
+        .vayu-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background: #e0f2fe;
+            color: #0284c7;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 18px auto;
+            transition: all 0.3s ease;
+        }
+
+        .vayu-icon-card:hover .vayu-icon-wrapper {
+            background: #0284c7;
+            color: #ffffff;
+            transform: rotateY(180deg);
+        }
+
+        .vayu-icon-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+        }
+
+        .vayu-icon-card p {
+            font-size: 0.85rem;
+            color: #64748b;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* POPULAR PACKAGES */
+        .vayu-packages-section {
+            padding: 70px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .vayu-pkg-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .vayu-pkg-card {
+            background: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .vayu-pkg-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+            border-color: #7dd3fc;
+        }
+
+        .vayu-pkg-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .vayu-pkg-content {
+            padding: 15px;
+        }
+
+        .vayu-pkg-content h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 6px 0;
+        }
+
+        .vayu-pkg-content p {
+            font-size: 0.85rem;
+            color: #0284c7;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+        }
+
+        .vayu-pkg-content a {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #0284c7;
+            text-decoration: none;
+        }
+
+        /* CTA FOOTER BANNER */
+        .vayu-cta-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #0369a1 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .vayu-cta-banner h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+        }
+
+        .vayu-cta-banner p {
+            color: #bae6fd;
+            font-size: 1rem;
+            margin: 0 0 25px 0;
+        }
+
+        .vayu-cta-btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .vayu-btn-outline {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .vayu-btn-outline:hover {
+            background: #ffffff;
+            color: #0f172a;
+        }
+
+        /* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
+        @media (max-width: 992px) {
+            .vayu-grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .vayu-pkg-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .vayu-svc-row, .vayu-svc-row.reverse {
+                grid-template-columns: 1fr;
+                direction: ltr;
+                padding: 20px;
+            }
+            .vayu-svc-checks {
+                grid-template-columns: 1fr;
+            }
+            .vayu-svc-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vayu-grid-4 {
+                grid-template-columns: 1fr;
+            }
+            .vayu-pkg-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
     <!-- SECTION 3: HERO BANNER -->
-    <section class="services-hero-section">
-        <div class="container text-center">
-            <h1 class="hero-title white">Our Premium Services</h1>
-            <p class="hero-subtitle white">Everything you need for the perfect journey — all under one roof.</p>
-            <div class="breadcrumbs white">Home > Services</div>
-        </div>
+    <section class="vayu-svc-hero">
+        <h1>Our Premium Services</h1>
+        <p>Everything you need for the perfect journey — all under one roof.</p>
+        <div class="vayu-breadcrumbs">Home &gt; Services</div>
     </section>
 
     <!-- SECTION 4: INTRO -->
-    <section class="section-padding reveal-up">
-        <div class="container text-center">
-            <h2 class="section-title center">Complete Travel Solutions by Vayu Airways</h2>
-            <p class="section-subtitle center">From flight booking to hotel reservations, car rentals to cruise packages — we handle it all with a touch of luxury and care.</p>
-        </div>
+    <section style="padding: 50px 20px 20px 20px; text-align: center; max-width: 800px; margin: 0 auto;">
+        <span style="padding: 4px 12px; background: #e0f2fe; color: #0284c7; font-size: 0.75rem; font-weight: 700; border-radius: 50px; text-transform: uppercase;">
+            EXPLORE VAYU AIRWAYS
+        </span>
+        <h2 style="font-size: 2.2rem; font-weight: 800; color: #0f172a; margin: 10px 0;">
+            Complete Travel Solutions
+        </h2>
+        <p style="color: #64748b; font-size: 1rem; margin: 0;">
+            From flight bookings to hotel reservations, car rentals to cruise packages — we handle it all with a touch of luxury and care.
+        </p>
     </section>
 
-    <!-- SECTION 5: MAIN SERVICES (Alternating Layouts) -->
-    
-    <!-- SERVICE 1: FLIGHTS -->
-    <section class="section-padding reveal-up" id="flights">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2 class="section-title">Flight Ticket Booking</h2>
-                    <p>Book domestic and international flight tickets at the guaranteed lowest price. Access flights from all major Indian airlines — IndiGo, Air India, SpiceJet, Vistara, AkasaAir — plus 100+ international carriers.</p>
-                    <ul class="about-checks">
-                        <li><i class="fas fa-check-circle"></i> Lowest Price Guarantee</li>
-                        <li><i class="fas fa-check-circle"></i> One Way & Round Trip</li>
-                        <li><i class="fas fa-check-circle"></i> Business & Economy</li>
-                        <li><i class="fas fa-check-circle"></i> Student/Defence Fares</li>
-                    </ul>
-                    <a href="index.html" class="btn btn-primary mt-20">Search Flights</a>
-                </div>
-                <div class="about-images">
-                    <div class="service-img-box card">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Flight Booking">
-                    </div>
-                </div>
+    <!-- SECTION 5: MAIN SERVICES LIST -->
+    <section class="vayu-main-svc-section">
+
+        <!-- Service 1: Flights -->
+        <div class="vayu-svc-row" id="flights">
+            <div class="vayu-svc-content">
+                <h2>Flight Ticket Booking</h2>
+                <p>Book domestic and international flight tickets at guaranteed lowest prices with access to all major Indian and global carriers.</p>
+                <ul class="vayu-svc-checks">
+                    <li><i class="fas fa-check-circle"></i> Lowest Price Guarantee</li>
+                    <li><i class="fas fa-check-circle"></i> One Way &amp; Round Trip</li>
+                    <li><i class="fas fa-check-circle"></i> Business &amp; Economy</li>
+                    <li><i class="fas fa-check-circle"></i> Student / Defence Fares</li>
+                </ul>
+                <a href="index.html" class="vayu-btn-primary">Search Flights &rarr;</a>
+            </div>
+            <div class="vayu-svc-img-box">
+                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Flight Booking">
             </div>
         </div>
-    </section>
 
-    <!-- SERVICE 2: HOTELS -->
-    <section class="section-padding bg-light reveal-up" id="hotels">
-        <div class="container">
-            <div class="about-grid reverse">
-                <div class="about-content">
-                    <h2 class="section-title">Hotel Reservation</h2>
-                    <p>Online hotel bookings across India and worldwide — from budget stays to 5-star luxury resorts. Instant confirmation, competitive pricing, and a wide choice of properties.</p>
-                    <ul class="about-checks">
-                        <li><i class="fas fa-check-circle"></i> Budget, Standard & Luxury</li>
-                        <li><i class="fas fa-check-circle"></i> Worldwide Coverage</li>
-                        <li><i class="fas fa-check-circle"></i> Instant Confirmation</li>
-                        <li><i class="fas fa-check-circle"></i> 6,500+ Partner Hotels</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary mt-20">Search Hotels</a>
-                </div>
-                <div class="about-images">
-                    <div class="service-img-box card">
-                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hotel Booking">
-                    </div>
-                </div>
+        <!-- Service 2: Hotels -->
+        <div class="vayu-svc-row reverse" id="hotels">
+            <div class="vayu-svc-content">
+                <h2>Hotel Reservations</h2>
+                <p>Online hotel bookings across India and worldwide — from budget stays to 5-star luxury resorts with instant confirmation.</p>
+                <ul class="vayu-svc-checks">
+                    <li><i class="fas fa-check-circle"></i> Budget &amp; Luxury Stays</li>
+                    <li><i class="fas fa-check-circle"></i> Worldwide Coverage</li>
+                    <li><i class="fas fa-check-circle"></i> Instant Confirmation</li>
+                    <li><i class="fas fa-check-circle"></i> 6,500+ Partner Hotels</li>
+                </ul>
+                <a href="contact.html" class="vayu-btn-primary">Search Hotels &rarr;</a>
+            </div>
+            <div class="vayu-svc-img-box">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hotel Booking">
             </div>
         </div>
-    </section>
 
-    <!-- SERVICE 3: CAR RENTALS -->
-    <section class="section-padding reveal-up" id="cars">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2 class="section-title">Car Rental Service</h2>
-                    <p>Comfortable, clean, and punctual car rental services for airport transfers, city tours, and outstation travel across India. Choose from hatchbacks to premium SUVs.</p>
-                    <ul class="about-checks">
-                        <li><i class="fas fa-check-circle"></i> Airport Pickup & Drop</li>
-                        <li><i class="fas fa-check-circle"></i> City & Outstation</li>
-                        <li><i class="fas fa-check-circle"></i> With/Without Driver</li>
-                        <li><i class="fas fa-check-circle"></i> Transparent Pricing</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary mt-20">Rent a Car</a>
-                </div>
-                <div class="about-images">
-                    <div class="service-img-box card">
-                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Car Rental">
-                    </div>
-                </div>
+        <!-- Service 3: Car Rentals -->
+        <div class="vayu-svc-row" id="cars">
+            <div class="vayu-svc-content">
+                <h2>Car Rental Service</h2>
+                <p>Comfortable, clean, and punctual car rentals for airport transfers, city tours, and outstation trips across India.</p>
+                <ul class="vayu-svc-checks">
+                    <li><i class="fas fa-check-circle"></i> Airport Pickup &amp; Drop</li>
+                    <li><i class="fas fa-check-circle"></i> City &amp; Outstation Rides</li>
+                    <li><i class="fas fa-check-circle"></i> Chauffeur Option</li>
+                    <li><i class="fas fa-check-circle"></i> Transparent Pricing</li>
+                </ul>
+                <a href="contact.html" class="vayu-btn-primary">Rent a Car &rarr;</a>
+            </div>
+            <div class="vayu-svc-img-box">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Car Rental">
             </div>
         </div>
-    </section>
 
-    <!-- SERVICE 4: BUSES -->
-    <section class="section-padding bg-light reveal-up" id="buses">
-        <div class="container">
-            <div class="about-grid reverse">
-                <div class="about-content">
-                    <h2 class="section-title">Bus Ticket Booking</h2>
-                    <p>Book bus tickets for intercity travel across India. Wide network of private and government operators with AC/Non-AC options, sleeper berths, and seater options.</p>
-                    <ul class="about-checks">
-                        <li><i class="fas fa-check-circle"></i> AC & Non-AC Options</li>
-                        <li><i class="fas fa-check-circle"></i> Sleeper & Seater</li>
-                        <li><i class="fas fa-check-circle"></i> Pan-India Coverage</li>
-                        <li><i class="fas fa-check-circle"></i> Easy Cancellation</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary mt-20">Book Bus</a>
-                </div>
-                <div class="about-images">
-                    <div class="service-img-box card">
-                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bus Booking">
-                    </div>
-                </div>
+        <!-- Service 4: Buses -->
+        <div class="vayu-svc-row reverse" id="buses">
+            <div class="vayu-svc-content">
+                <h2>Bus Ticket Booking</h2>
+                <p>Intercity bus travel across India via a huge network of trusted operators with flexible seating and sleeper options.</p>
+                <ul class="vayu-svc-checks">
+                    <li><i class="fas fa-check-circle"></i> AC &amp; Non-AC Options</li>
+                    <li><i class="fas fa-check-circle"></i> Sleeper &amp; Seater</li>
+                    <li><i class="fas fa-check-circle"></i> Pan-India Coverage</li>
+                    <li><i class="fas fa-check-circle"></i> Easy Cancellation</li>
+                </ul>
+                <a href="contact.html" class="vayu-btn-primary">Book Bus &rarr;</a>
+            </div>
+            <div class="vayu-svc-img-box">
+                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bus Booking">
             </div>
         </div>
-    </section>
 
-    <!-- SERVICE 5: CRUISE -->
-    <section class="section-padding reveal-up" id="cruise">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2 class="section-title">Cruise Packages</h2>
-                    <p>Explore the world's finest cruise destinations — from the Andaman Islands to Mediterranean voyages. Premium cruise packages with onboard dining, entertainment, and shore excursions.</p>
-                    <ul class="about-checks">
-                        <li><i class="fas fa-check-circle"></i> Indian Ocean & International</li>
-                        <li><i class="fas fa-check-circle"></i> All-Inclusive Options</li>
-                        <li><i class="fas fa-check-circle"></i> Family & Honeymoon Cruises</li>
-                        <li><i class="fas fa-check-circle"></i> Expert Cruise Planning</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary mt-20">Explore Cruises</a>
-                </div>
-                <div class="about-images">
-                    <div class="service-img-box card">
-                        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cruise Travel">
-                    </div>
-                </div>
+        <!-- Service 5: Cruises -->
+        <div class="vayu-svc-row" id="cruise">
+            <div class="vayu-svc-content">
+                <h2>Cruise Packages</h2>
+                <p>Explore luxury ocean cruises — from domestic island routes to Mediterranean voyages with onboard dining and entertainment.</p>
+                <ul class="vayu-svc-checks">
+                    <li><i class="fas fa-check-circle"></i> Domestic &amp; Global Routes</li>
+                    <li><i class="fas fa-check-circle"></i> All-Inclusive Packages</li>
+                    <li><i class="fas fa-check-circle"></i> Family &amp; Honeymoon Trips</li>
+                    <li><i class="fas fa-check-circle"></i> Guided Shore Excursions</li>
+                </ul>
+                <a href="contact.html" class="vayu-btn-primary">Explore Cruises &rarr;</a>
+            </div>
+            <div class="vayu-svc-img-box">
+                <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cruise Travel">
             </div>
         </div>
-    </section>
 
-    <!-- SERVICE 6: INSURANCE -->
-    <section class="section-padding bg-light reveal-up" id="insurance">
-        <div class="container">
-            <div class="about-grid reverse">
-                <div class="about-content">
-                    <h2 class="section-title">Travel Insurance</h2>
-                    <p>Comprehensive travel insurance for domestic and international trips. Medical coverage, trip cancellation, baggage loss, and emergency evacuation — travel with complete peace of mind.</p>
-                    <ul class="about-checks">
-                        <li><i class="fas fa-check-circle"></i> Medical Coverage</li>
-                        <li><i class="fas fa-check-circle"></i> Trip Cancellation</li>
-                        <li><i class="fas fa-check-circle"></i> Baggage Protection</li>
-                        <li><i class="fas fa-check-circle"></i> Emergency Evacuation</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary mt-20">Get Insurance Quote</a>
-                </div>
-                <div class="about-images">
-                    <div class="service-img-box card">
-                        <img src="https://images.unsplash.com/photo-1454165833767-027ff39c4672?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Travel Insurance">
-                    </div>
-                </div>
+        <!-- Service 6: Insurance -->
+        <div class="vayu-svc-row reverse" id="insurance">
+            <div class="vayu-svc-content">
+                <h2>Travel Insurance</h2>
+                <p>Comprehensive travel insurance for complete peace of mind. Covers medical emergencies, flight cancellations, and baggage delays.</p>
+                <ul class="vayu-svc-checks">
+                    <li><i class="fas fa-check-circle"></i> Medical Emergencies</li>
+                    <li><i class="fas fa-check-circle"></i> Trip Cancellation</li>
+                    <li><i class="fas fa-check-circle"></i> Baggage Protection</li>
+                    <li><i class="fas fa-check-circle"></i> Global Evacuation</li>
+                </ul>
+                <a href="contact.html" class="vayu-btn-primary">Get Quote &rarr;</a>
+            </div>
+            <div class="vayu-svc-img-box">
+                <img src="https://images.unsplash.com/photo-1454165833767-027ff39c4672?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Travel Insurance">
             </div>
         </div>
+
     </section>
 
-    <!-- SECTION 6: ADDITIONAL SPECIAL SERVICES (Icon Grid) -->
-    <section class="section-padding reveal-up" id="additional-services">
-        <div class="container">
-            <div class="text-center mb-50">
-                <h2 class="section-title center">Additional Premium Services</h2>
-                <p class="section-subtitle center">Little things that make a big difference in your travel experience.</p>
+    <!-- SECTION 6: ADDITIONAL SERVICES GRID -->
+    <section class="vayu-add-svc-section" id="additional-services">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+            <h2 style="font-size: 2rem; font-weight: 800; color: #0f172a; margin: 0 0 10px 0;">Additional Premium Services</h2>
+            <p style="color: #64748b; font-size: 0.95rem; margin: 0;">Thoughtful features to make your travel completely hassle-free.</p>
+        </div>
+
+        <div class="vayu-grid-4">
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-passport"></i></div>
+                <h3>Visa Assistance</h3>
+                <p>Guidance and document processing support for 100+ countries.</p>
             </div>
-            
-            <div class="card-grid">
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-passport text-gold"></i></div>
-                    <h3>Visa Assistance</h3>
-                    <p>Expert guidance and processing support for 100+ countries' tourist and business visas.</p>
-                </div>
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-shuttle-van text-gold"></i></div>
-                    <h3>Airport Transfer</h3>
-                    <p>Seamless airport pickup and drop services in all major cities of India and popular global hubs.</p>
-                </div>
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-user-friends text-gold"></i></div>
-                    <h3>Tour Guides</h3>
-                    <p>Certified local tour guides who know the hidden gems and history of every destination.</p>
-                </div>
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-exchange-alt text-gold"></i></div>
-                    <h3>Forex Services</h3>
-                    <p>Competitive rates for foreign currency exchange and travel cards for worry-free payments.</p>
-                </div>
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-heart text-gold"></i></div>
-                    <h3>Honeymoon Planning</h3>
-                    <p>Specialized romantic itineraries with extra touches like candlelight dinners and flower decor.</p>
-                </div>
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-briefcase text-gold"></i></div>
-                    <h3>Corporate Travel</h3>
-                    <p>Complete B2B and MICE travel management for efficient and stylish business trips.</p>
-                </div>
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-harch-dam text-gold"></i></div>
-                    <h3>Pilgrimage Tours</h3>
-                    <p>Respectful and well-organized spiritual journeys to sacred sites across India.</p>
-                </div>
-                <div class="card text-center">
-                    <div class="feature-icon"><i class="fas fa-book-reader text-gold"></i></div>
-                    <h3>Student Tours</h3>
-                    <p>Educational and fun-filled group tours designed for students and educational institutions.</p>
-                </div>
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-shuttle-van"></i></div>
+                <h3>Airport Transfers</h3>
+                <p>Seamless pickups and drops in major Indian and global cities.</p>
+            </div>
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-user-friends"></i></div>
+                <h3>Tour Guides</h3>
+                <p>Certified local guides who reveal hidden local treasures.</p>
+            </div>
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-exchange-alt"></i></div>
+                <h3>Forex Services</h3>
+                <p>Great exchange rates and multi-currency travel cards.</p>
+            </div>
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-heart"></i></div>
+                <h3>Honeymoon Specials</h3>
+                <p>Tailored romantic setups with special dinners and decor.</p>
+            </div>
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-briefcase"></i></div>
+                <h3>Corporate Travel</h3>
+                <p>MICE and B2B corporate management with corporate discounts.</p>
+            </div>
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-place-of-worship"></i></div>
+                <h3>Pilgrimage Tours</h3>
+                <p>Well-organized, comfortable journeys to holy sites nationwide.</p>
+            </div>
+            <div class="vayu-icon-card">
+                <div class="vayu-icon-wrapper"><i class="fas fa-book-reader"></i></div>
+                <h3>Student Groups</h3>
+                <p>Educational group travel packages with special student discounts.</p>
             </div>
         </div>
     </section>
 
     <!-- SECTION 7: POPULAR PACKAGES PREVIEW -->
-    <section class="section-padding bg-light reveal-up">
-        <div class="container">
-            <div class="text-center mb-40">
-                <h2 class="section-title center">Our Best-Selling Packages</h2>
+    <section class="vayu-packages-section">
+        <div style="text-align: center;">
+            <h2 style="font-size: 2rem; font-weight: 800; color: #0f172a; margin: 0;">Our Best-Selling Packages</h2>
+        </div>
+
+        <div class="vayu-pkg-grid">
+            <div class="vayu-pkg-card">
+                <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Rajasthan">
+                <div class="vayu-pkg-content">
+                    <h4>Rajasthan Royal Tour</h4>
+                    <p>3N/4D | ₹15,999</p>
+                    <a href="contact.html">Book Now &rarr;</a>
+                </div>
             </div>
-            <div class="horizontal-package-grid">
-                <!-- Mini Card 1 -->
-                <div class="mini-package card">
-                    <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Rajasthan">
-                    <div class="mini-content">
-                        <h4>Rajasthan Royal Tour</h4>
-                        <p>3N/4D | ₹15,999</p>
-                        <a href="contact.html">Book Now</a>
-                    </div>
+            <div class="vayu-pkg-card">
+                <img src="https://images.unsplash.com/photo-1593181629936-11c609b8db9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Kerala">
+                <div class="vayu-pkg-content">
+                    <h4>Kerala Backwaters</h4>
+                    <p>4N/5D | ₹18,499</p>
+                    <a href="contact.html">Book Now &rarr;</a>
                 </div>
-                <!-- Mini Card 2 -->
-                <div class="mini-package card">
-                    <img src="https://images.unsplash.com/photo-1593181629936-11c609b8db9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Kerala">
-                    <div class="mini-content">
-                        <h4>Kerala Backwaters</h4>
-                        <p>4N/5D | ₹18,499</p>
-                        <a href="contact.html">Book Now</a>
-                    </div>
+            </div>
+            <div class="vayu-pkg-card">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Manali">
+                <div class="vayu-pkg-content">
+                    <h4>Manali Adventure</h4>
+                    <p>3N/4D | ₹12,999</p>
+                    <a href="contact.html">Book Now &rarr;</a>
                 </div>
-                <!-- Mini Card 3 -->
-                <div class="mini-package card">
-                    <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Manali">
-                    <div class="mini-content">
-                        <h4>Manali Adventure</h4>
-                        <p>3N/4D | ₹12,999</p>
-                        <a href="contact.html">Book Now</a>
-                    </div>
-                </div>
-                <!-- Mini Card 4 -->
-                <div class="mini-package card">
-                    <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Thailand">
-                    <div class="mini-content">
-                        <h4>Thailand Explorer</h4>
-                        <p>5N/6D | ₹42,999</p>
-                        <a href="contact.html">Book Now</a>
-                    </div>
+            </div>
+            <div class="vayu-pkg-card">
+                <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Thailand">
+                <div class="vayu-pkg-content">
+                    <h4>Thailand Explorer</h4>
+                    <p>5N/6D | ₹42,999</p>
+                    <a href="contact.html">Book Now &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION 8: CTA BANNER -->
-    <section class="services-cta-section section-padding">
-        <div class="container text-center">
-            <h2 class="text-white">Your Perfect Journey Starts Here</h2>
-                    <h2 class="text-white">Your Perfect Journey Starts Here</h2>
-                    <p class="text-white mb-30">Talk to our travel experts and get a personalized travel plan curated just for you.</p>
-                    <div class="cta-btns">
-                        <a href="tel:+918796017652" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now: +91-8796017652</a>
-                        <a href="contact.html" class="btn btn-outline-white">Send Enquiry</a>
-                    </div>
-                </div>
-            </section>
+    <section class="vayu-cta-banner">
+        <h2>Your Perfect Journey Starts Here</h2>
+        <p>Talk to our travel experts and get a personalized itinerary curated just for you.</p>
+        <div class="vayu-cta-btn-group">
+            <a href="tel:+918796017652" class="vayu-btn-primary" style="background: #ffffff; color: #0284c7;">
+                <i class="fas fa-phone-alt"></i> Call Now: +91-8796017652
+            </a>
+            <a href="contact.html" class="vayu-btn-outline">Send Enquiry</a>
+        </div>
+    </section>
+
+</div>
 
     <!-- FOOTER -->
     <footer>

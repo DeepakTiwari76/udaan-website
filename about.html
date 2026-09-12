@@ -18,27 +18,145 @@
 <body>
 
     <!-- SECTION 1: PRE-HEADER BAR -->
-    <section class="pre-header">
-        <div class="container">
-            <div class="pre-header-left">
-                <span><i class="fas fa-phone"></i> +91-8796017652</span>
-                <span class="d-none-mobile"><i class="fas fa-envelope"></i> hr@vayuairways.in</span>
-            </div>
-            <div class="pre-header-right">
-                <div class="pre-header-links">
-                    <a href="career.html">Apply Jobs</a> |
-                    <a href="#">Join Membership</a> |
-                    <a href="#">Member Login</a>
-                </div>
-                <div class="pre-header-socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+    <section class="vayu-preheader">
+    
+    <!-- Custom CSS for Pre-Header Hover Effects & Mobile Layout -->
+    <style>
+        .vayu-preheader {
+            background-color: #96997f; /* Deep Navy Dark Background */
+            color: #1f2123;
+            font-size: 0.825rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 0;
+        }
+
+        .vayu-preheader-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Left Side: Contact Information */
+        .vayu-preheader-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .vayu-preheader-contact a {
+            color: #020a14;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a i {
+            color: #38bdf8; /* Vibrant Sky Blue Icon Color */
+            font-size: 0.85rem;
+            transition: transform 0.25s ease;
+        }
+
+        .vayu-preheader-contact a:hover {
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .vayu-preheader-contact a:hover i {
+            transform: scale(1.15);
+        }
+
+        /* Right Side: Links & Membership */
+        .vayu-preheader-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vayu-preheader-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        /* Hover Effect on Links */
+        .vayu-preheader-links a:hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Highlighted Login / CTA Link */
+        .vayu-preheader-links a.vayu-highlight-link {
+            background-color: #0284c7;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-weight: 600;
+        }
+
+        .vayu-preheader-links a.vayu-highlight-link:hover {
+            background-color: #0369a1;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+        }
+
+        .vayu-link-divider {
+            color: #334155;
+            font-size: 0.75rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 640px) {
+            .vayu-preheader-container {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .vayu-hide-mobile {
+                display: none !important;
+            }
+
+            .vayu-preheader-links {
+                gap: 4px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <div class="vayu-preheader-container">
+        
+        <!-- Left Section: Phone & Email -->
+        <div class="vayu-preheader-contact">
+            <a href="tel:+918796017652">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91-8796017652</span>
+            </a>
+            <a href="mailto:hr@vayuairways.in" class="vayu-hide-mobile">
+                <i class="fas fa-envelope"></i>
+                <span>hr@vayuairways.in</span>
+            </a>
         </div>
-    </section>
+
+        <!-- Right Section: Action Links -->
+        <div class="vayu-preheader-links">
+            <a href="career.html">Apply Jobs</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#">Join Membership</a>
+            <span class="vayu-link-divider">|</span>
+            <a href="#" class="vayu-highlight-link">Member Login</a>
+        </div>
+
+    </div>
+</section>
 
     <!-- SECTION 2: NAVBAR -->
     <nav class="navbar">
@@ -79,123 +197,414 @@
         </div>
     </nav>
 
-    <!-- SECTION 3: HERO BANNER -->
-    <section class="about-hero-section">
-        <div class="container text-center">
-            <h1 class="hero-title white">Our Story & Commitment</h1>
-            <p class="hero-subtitle white">Connecting dreams with destinations through excellence and safety.</p>
+   <!-- ABOUT SECTIONS WRAPPER -->
+<div class="vayu-about-wrapper">
+    
+    <!-- Custom CSS Styles for Hero, Hover Effects, and Responsive Layout -->
+    <style>
+        .vayu-about-wrapper {
+            font-family: inherit;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+
+        /* SECTION 3: HERO BANNER WITH BACKGROUND IMAGE */
+        .vayu-about-hero {
+            position: relative;
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
+                        url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 110px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .vayu-about-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 0 0 12px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .vayu-about-hero p {
+            font-size: 1.15rem;
+            color: #e2e8f0;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* SECTION 4: MISSION & VISION */
+        .vayu-mv-section {
+            padding: 70px 0;
+            background: #ffffff;
+        }
+
+        .vayu-mv-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .vayu-mv-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 40px 30px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+        }
+
+        .vayu-mv-card:hover {
+            transform: translateY(-8px);
+            background: #ffffff;
+            border-color: #cbd5e1;
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.1);
+        }
+
+        .vayu-mv-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            background: #0284c7;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 22px;
+            transition: transform 0.3s ease;
+        }
+
+        .vayu-mv-card:hover .vayu-mv-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .vayu-mv-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 12px 0;
+        }
+
+        .vayu-mv-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* SECTION 5: MANAGEMENT MESSAGE */
+        .vayu-mgmt-section {
+            padding: 70px 0;
+            background: #f8fafc;
+        }
+
+        .vayu-mgmt-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .vayu-mgmt-quote {
+            background: #ffffff;
+            border-left: 4px solid #ffb703;
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: #334155;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .vayu-mgmt-img-box {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+        }
+
+        .vayu-mgmt-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .vayu-mgmt-img-box:hover img {
+            transform: scale(1.05);
+        }
+
+        /* SECTION 6: WHY CHOOSE US (UDAAN EDGE) */
+        .vayu-edge-section {
+            padding: 70px 0;
+            background: #ffffff;
+        }
+
+        .vayu-edge-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 0 20px;
+        }
+
+        .vayu-edge-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px 25px;
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            transition: all 0.35s ease;
+        }
+
+        .vayu-edge-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 30px rgba(2, 132, 199, 0.12);
+            border-color: #bae6fd;
+        }
+
+        .vayu-edge-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #e0f2fe;
+            color: #0284c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .vayu-edge-card:hover .vayu-edge-icon {
+            background: #0284c7;
+            color: #ffffff;
+        }
+
+        .vayu-edge-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+        }
+
+        .vayu-edge-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* SECTION 7: CERTIFICATIONS & AFFILIATIONS */
+        .vayu-cert-section {
+            padding: 60px 0;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .vayu-cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 0 20px;
+        }
+
+        .vayu-cert-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 24px 15px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vayu-cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+            border-color: #cbd5e1;
+        }
+
+        .vayu-cert-card img {
+            max-height: 50px;
+            width: auto;
+            margin-bottom: 15px;
+            filter: grayscale(20%);
+            transition: filter 0.3s ease;
+        }
+
+        .vayu-cert-card:hover img {
+            filter: grayscale(0%);
+        }
+
+        .vayu-cert-card p {
+            color: #334155;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
+        @media (max-width: 992px) {
+            .vayu-mgmt-container {
+                grid-template-columns: 1fr;
+            }
+            .vayu-edge-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .vayu-cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .vayu-about-hero {
+                padding: 70px 15px;
+            }
+            .vayu-about-hero h1 {
+                font-size: 2rem;
+            }
+            .vayu-mv-grid {
+                grid-template-columns: 1fr;
+            }
+            .vayu-edge-grid {
+                grid-template-columns: 1fr;
+            }
+            .vayu-cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- SECTION 3: HERO BANNER WITH BG IMAGE -->
+    <section class="vayu-about-hero">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h1>Our Story & Commitment</h1>
+            <p>Connecting dreams with destinations through safety, luxury, and unmatched service excellence.</p>
         </div>
     </section>
 
-    <!-- SECTION 4: MISSION & VISION (Split Cards) -->
-    <section class="section-padding reveal-up">
-        <div class="container">
-            <div class="mission-vision-grid">
-                <div class="card mission-box">
-                    <div class="icon-circle"><i class="fas fa-rocket"></i></div>
-                    <h2>Our Mission</h2>
-                    <p>To provide exceptional travel experiences defined by safety, comfort, and affordability. We aim
-                        to revolutionize Indian aviation by making air travel accessible to all without compromising on
-                        quality or service excellence.</p>
-                </div>
-                <div class="card vision-box">
-                    <div class="icon-circle"><i class="fas fa-eye"></i></div>
-                    <h2>Our Vision</h2>
-                    <p>To be the world’s most loved and trusted travel brand, fostering a culture of passenger-first
-                        service and sustainable operations that connect communities and inspire global exploration.</p>
-                </div>
+    <!-- SECTION 4: MISSION & VISION -->
+    <section class="vayu-mv-section">
+        <div class="vayu-mv-grid">
+            <!-- Mission Card -->
+            <div class="vayu-mv-card">
+                <div class="vayu-mv-icon"><i class="fas fa-rocket"></i></div>
+                <h2>Our Mission</h2>
+                <p>To provide exceptional travel experiences defined by safety, comfort, and affordability. We aim to revolutionize Indian aviation by making air travel accessible to all without compromising on quality or service excellence.</p>
+            </div>
+            <!-- Vision Card -->
+            <div class="vayu-mv-card">
+                <div class="vayu-mv-icon"><i class="fas fa-eye"></i></div>
+                <h2>Our Vision</h2>
+                <p>To be the world’s most loved and trusted travel brand, fostering a culture of passenger-first service and sustainable operations that connect communities and inspire global exploration.</p>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 5: MANAGEMENT MESSAGE (Feature Block) -->
-    <section class="section-padding bg-light reveal-up">
-        <div class="container">
-            <div class="about-grid reverse">
-                <div class="about-content">
-                    <span class="label">MESSAGE FROM LEADERSHIP</span>
-                    <h2 class="section-title">A Journey Driven by Passion</h2>
-                    <p>“At Vayu Airways, we believe that travel is more than just moving from A to B — it's about the
-                        memories created along the way. Our team works tirelessly to ensure that every passenger feels
-                        valued from the moment they book their ticket until they reach their destination.”</p>
-                    <p>Founded with a vision to simplify travel, we have grown into a reliable name in the aviation and
-                        tourism industry, dedicated to innovation and customer satisfaction.</p>
+    <!-- SECTION 5: MANAGEMENT MESSAGE -->
+    <section class="vayu-mgmt-section">
+        <div class="vayu-mgmt-container">
+            <div>
+                <span style="display: inline-block; padding: 5px 14px; background: #e0f2fe; color: #0284c7; font-size: 0.75rem; font-weight: 700; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
+                    Leadership Message
+                </span>
+                <h2 style="font-size: 2.2rem; font-weight: 700; color: #0f172a; margin: 0 0 10px 0;">
+                    A Journey Driven by Passion
+                </h2>
+                
+                <div class="vayu-mgmt-quote">
+                    “At Vayu Airways, we believe travel is more than just moving from A to B — it's about the memories created along the way. Our team works tirelessly to ensure that every passenger feels valued from the moment they book their ticket.”
+                </div>
+                
+                <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">
+                    Founded with a vision to simplify travel, we have grown into a reliable name in the aviation and tourism industry, dedicated to innovation and total customer satisfaction.
+                </p>
 
-                    <div class="signature-box mt-30">
-                        <div class="sig-text">
-                            <h4>Management Team</h4>
-                            <p>Vayu Airways Services</p>
-                        </div>
-                    </div>
+                <div>
+                    <h4 style="font-size: 1.05rem; font-weight: 700; color: #0f172a; margin: 0;">Management Team</h4>
+                    <p style="font-size: 0.85rem; color: #0284c7; font-weight: 500; margin: 2px 0 0 0;">Vayu Airways Services Ltd.</p>
                 </div>
-                <div class="about-images">
-                    <div class="management-img card">
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Management Meeting">
-                    </div>
-                </div>
+            </div>
+
+            <div class="vayu-mgmt-img-box">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vayu Airways Management Team">
             </div>
         </div>
     </section>
 
-    <!-- SECTION 6: WHY CHOOSE US (Copy from Index for Consistency) -->
-    <section class="section-padding reveal-up">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title center">The Udaan Edge</h2>
-                <p class="section-subtitle center">Providing the best travel solutions with a human touch.</p>
-            </div>
+    <!-- SECTION 6: THE UDAAN EDGE -->
+    <section class="vayu-edge-section">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-size: 2.2rem; font-weight: 700; color: #0f172a; margin: 0 0 10px 0;">The Vayu Edge</h2>
+            <div style="width: 50px; height: 3px; background: #ffb703; margin: 0 auto 12px; border-radius: 2px;"></div>
+            <p style="color: #64748b; font-size: 0.95rem; margin: 0;">Providing the best travel solutions with a warm human touch.</p>
+        </div>
 
-            <div class="card-grid">
-                <div class="card reveal-up">
-                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Uncompromising Safety</h3>
-                    <p>Certified safety protocols and a modern fleet maintained to the highest international standards.
-                    </p>
-                </div>
-                <div class="card reveal-up">
-                    <div class="feature-icon"><i class="fas fa-wallet"></i></div>
-                    <h3>Transparent Pricing</h3>
-                    <p>No hidden costs. We provide competitive fares and diverse package options for every budget.</p>
-                </div>
-                <div class="card reveal-up">
-                    <div class="feature-icon"><i class="fas fa-globe-americas"></i></div>
-                    <h3>Vast Network</h3>
-                    <p>Strategic partnerships that allow us to offer seamless connections across India and major global
-                        hubs.</p>
-                </div>
+        <div class="vayu-edge-grid">
+            <div class="vayu-edge-card">
+                <div class="vayu-edge-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Uncompromising Safety</h3>
+                <p>Certified safety protocols and a modern fleet maintained strictly to international standards.</p>
+            </div>
+            <div class="vayu-edge-card">
+                <div class="vayu-edge-icon"><i class="fas fa-wallet"></i></div>
+                <h3>Transparent Pricing</h3>
+                <p>No hidden costs. We provide competitive fares and diverse package options tailored for every budget.</p>
+            </div>
+            <div class="vayu-edge-card">
+                <div class="vayu-edge-icon"><i class="fas fa-globe-americas"></i></div>
+                <h3>Vast Network</h3>
+                <p>Strategic global partnerships allowing seamless connections across India and major international hubs.</p>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 7: CERTIFICATIONS & AFFILIATIONS (Logo Grid) -->
-    <section class="section-padding bg-light reveal-up">
-        <div class="container">
-            <div class="text-center mb-40">
-                <h2 class="section-title center">Government & Industry Recognitions</h2>
-                <p class="section-subtitle center">Vayu Airways is a fully registered and certified entity.</p>
+    <!-- SECTION 7: CERTIFICATIONS & RECOGNITION -->
+    <section class="vayu-cert-section">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-size: 1.8rem; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Government & Industry Recognitions</h2>
+            <p style="color: #64748b; font-size: 0.9rem; margin: 0;">Vayu Airways is a fully registered and certified aviation entity.</p>
+        </div>
+
+        <div class="vayu-cert-grid">
+            <div class="vayu-cert-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1162/1162234.png" alt="MCA Logo">
+                <p>Ministry of Corporate Affairs</p>
             </div>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1162/1162234.png" alt="MCA">
-                    <p>Ministry of Corporate Affairs (MCA)</p>
-                </div>
-                <div class="cert-card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3596/3596091.png" alt="ISO">
-                    <p>ISO 9001:2015 Certified</p>
-                </div>
-                <div class="cert-card">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5770067641fb1067614d6438/1466967735160-R3U8HWS2UP00O3RBSY8Z/IATA-Vayu logo.png"
-                        alt="IATA" style="width: 80px; height: auto;">
-                    <p>IATA Affiliated Partners</p>
-                </div>
-                <div class="cert-card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="GST">
-                    <p>GST Registered Enterprise</p>
-                </div>
+            <div class="vayu-cert-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3596/3596091.png" alt="ISO Logo">
+                <p>ISO 9001:2015 Certified</p>
+            </div>
+            <div class="vayu-cert-card">
+                <img src="/images/iata-logo1.png" alt="IATA Logo">
+                <p>IATA Affiliated Partners</p>
+            </div>
+            <div class="vayu-cert-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="GST Logo">
+                <p>GST Registered Enterprise</p>
             </div>
         </div>
     </section>
+
+</div>
 
     <!-- FOOTER -->
     <footer>
