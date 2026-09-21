@@ -37,6 +37,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding-top: 200px;
 }
 
 body {
@@ -355,6 +356,17 @@ nav.navbar .container {
     padding: 8px 20px !important;
     font-size: 0.85rem !important;
     white-space: nowrap;
+}
+
+/* Green Apply Now CTA (used on index top navbar) */
+.apply-now-cta {
+    background-color: #22c55e !important; /* green-500 */
+    color: #ffffff !important;
+    border-color: #16a34a !important;
+}
+.apply-now-cta:hover {
+    background-color: #16a34a !important; /* green-600 */
+    box-shadow: 0 6px 18px rgba(22, 163, 74, 0.18);
 }
 
 @media (max-width: 991px) {

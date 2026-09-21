@@ -136,9 +136,9 @@
         
         <!-- Left Section: Phone & Email -->
         <div class="vayu-preheader-contact">
-            <a href="tel:+918796017652">
+            <a href="tel:0120-4439885">
                 <i class="fas fa-phone-alt"></i>
-                <span>+91-8796017652</span>
+                <span>0120-4439885</span>
             </a>
             <a href="mailto:hr@vayuairways.in" class="vayu-hide-mobile">
                 <i class="fas fa-envelope"></i>
@@ -148,7 +148,7 @@
 
         <!-- Right Section: Action Links -->
         <div class="vayu-preheader-links">
-            <a href="career.html">Apply Jobs</a>
+            <a href="contact.html#vayuContactForm" class="apply-now-cta">Apply Jobs</a>
             <span class="vayu-link-divider">|</span>
             <a href="#">Join Membership</a>
             <span class="vayu-link-divider">|</span>
@@ -188,7 +188,7 @@
             </div>
 
             <div class="nav-btns">
-                <a href="tel:+918796017652" class="btn btn-primary nav-cta">Enquire Now</a>
+                <a href="contact.html#vayuContactForm" class="btn btn-primary nav-cta apply-now-cta">Enquire Now</a>
                 <div class="hamburger">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -628,8 +628,8 @@
                 </div>
                 <h3>Call &amp; WhatsApp</h3>
                 <p>
-                    Sales: <a href="tel:+918796017652">+91-8796017652</a><br>
-                    WhatsApp: <a href="https://wa.me/918796017652" target="_blank">+91-8796017652</a>
+                    Sales: <a href="tel:0120-4439885">0120-4439885</a><br>
+                    WhatsApp: <a href="https://wa.me/918796017652" target="_blank">0120-4439885</a>
                 </p>
             </div>
 
@@ -648,83 +648,83 @@
     </section>
 
     <!-- SECTION 5: CONTACT FORM & MAP (SPLIT LAYOUT) -->
-    <section class="vayu-main-contact-sec">
-        <div class="vayu-split-layout">
+<section class="vayu-main-contact-sec">
+    <div class="vayu-split-layout">
+        
+        <!-- Form Box -->
+        <div class="vayu-form-box">
+            <h2>Send a Query</h2>
+            <p class="subtitle">Drop us a message and our travel planners will get back to you within 24 hours.</p>
+
+            <form class="vayu-main-form" id="vayuContactForm">
+                <div class="vayu-form-row">
+                    <div class="vayu-form-group">
+                        <label for="vayu-name">Full Name</label>
+                        <input type="text" id="vayu-name" name="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="vayu-form-group">
+                        <label for="vayu-phone">Phone Number</label>
+                        <input type="tel" id="vayu-phone" name="phone" placeholder="+91 98765 43210" required>
+                    </div>
+                </div>
+
+                <div class="vayu-form-group">
+                    <label for="vayu-service">Service Interested In</label>
+                    <select id="vayu-service" name="service" required>
+                        <option value="Flight Booking">Flight Booking</option>
+                        <option value="Tour Package">Tour Package</option>
+                        <option value="Academy Enquiry">Academy Enquiry</option>
+                        <option value="Career Opportunity">Career Opportunity</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+
+                <div class="vayu-form-group">
+                    <label for="vayu-msg">Your Message</label>
+                    <textarea id="vayu-msg" name="message" rows="4" placeholder="How can we help you today?" required></textarea>
+                </div>
+
+                <button type="submit" id="vayuSubmitBtn" class="vayu-btn-submit">Submit Message &rarr;</button>
+            </form>
+        </div>
+
+        <!-- Sidebar (Map & Socials) -->
+        <div class="vayu-sidebar">
             
-            <!-- Form Box -->
-            <div class="vayu-form-box">
-                <h2>Send a Query</h2>
-                <p class="subtitle">Drop us a message and our travel planners will get back to you within 24 hours.</p>
-
-                <form class="vayu-main-form" action="#" method="POST">
-                    <div class="vayu-form-row">
-                        <div class="vayu-form-group">
-                            <label for="vayu-name">Full Name</label>
-                            <input type="text" id="vayu-name" placeholder="John Doe" required>
-                        </div>
-                        <div class="vayu-form-group">
-                            <label for="vayu-phone">Phone Number</label>
-                            <input type="tel" id="vayu-phone" placeholder="+91 98765 43210" required>
-                        </div>
+            <!-- Map Card -->
+            <div class="vayu-map-card">
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Map Preview" class="vayu-map-bg">
+                
+                <div class="vayu-map-overlay">
+                    <div class="vayu-map-pin">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
-
-                    <div class="vayu-form-group">
-                        <label for="vayu-service">Service Interested In</label>
-                        <select id="vayu-service">
-                            <option value="flight">Flight Booking</option>
-                            <option value="tour">Tour Package</option>
-                            <option value="academy">Academy Enquiry</option>
-                            <option value="career">Career Opportunity</option>
-                            <option value="others">Others</option>
-                        </select>
-                    </div>
-
-                    <div class="vayu-form-group">
-                        <label for="vayu-msg">Your Message</label>
-                        <textarea id="vayu-msg" rows="4" placeholder="How can we help you today?"></textarea>
-                    </div>
-
-                    <button type="submit" class="vayu-btn-submit">Submit Message &rarr;</button>
-                </form>
+                    <h4>Visit Our Office</h4>
+                    <p>Sector-63, Noida Hub, India</p>
+                    <a href="https://maps.google.com" target="_blank" class="vayu-btn-outline-sm">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
             </div>
 
-            <!-- Sidebar (Map & Socials) -->
-            <div class="vayu-sidebar">
+            <!-- Social Connect Card -->
+            <div class="vayu-social-card">
+                <h3>Connect Digitally</h3>
+                <p>Join our 8,000+ member travel community on social media.</p>
                 
-                <!-- Map Card -->
-                <div class="vayu-map-card">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Map Preview" class="vayu-map-bg">
-                    
-                    <div class="vayu-map-overlay">
-                        <div class="vayu-map-pin">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h4>Visit Our Office</h4>
-                        <p>Sector-63, Noida Hub, India</p>
-                        <a href="https://maps.google.com" target="_blank" class="vayu-btn-outline-sm">
-                            <i class="fas fa-directions"></i> Get Directions
-                        </a>
-                    </div>
+                <div class="vayu-social-links">
+                    <a href="#" class="vayu-social-btn fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="vayu-social-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="vayu-social-btn tw" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="vayu-social-btn ln" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="vayu-social-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
-
-                <!-- Social Connect Card -->
-                <div class="vayu-social-card">
-                    <h3>Connect Digitally</h3>
-                    <p>Join our 8,000+ member travel community on social media.</p>
-                    
-                    <div class="vayu-social-links">
-                        <a href="#" class="vayu-social-btn fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="vayu-social-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="vayu-social-btn tw" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="vayu-social-btn ln" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="vayu-social-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
             </div>
 
         </div>
-    </section>
+
+    </div>
+</section>
 
 </div>
 
@@ -739,8 +739,8 @@
                         </a>
                     </div>
                     <p>Vayu Airways pvt LTD — NCT & MCA Certified</p>
-                    <p class="info"><i class="fas fa-map-marker-alt"></i> First Floor, H-69, Sector-63, Noida, UP</p>
-                    <p class="info"><i class="fas fa-phone"></i> +91-8796017652</p>
+                    <p class="info"><i class="fas fa-map-marker-alt"></i> First Floor, G-69, Sector-63, Noida, UP</p>
+                    <p class="info"><i class="fas fa-phone"></i> 0120-4439885</p>
                     <p class="info"><i class="fas fa-envelope"></i> hr@vayuairways.in</p>
                 </div>
                 <div class="footer-col">
@@ -958,7 +958,43 @@
     </style>
 
     
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+
+        <script>
+            // Apne App Script Deployed Web App Ka URL yahan paste karein
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzfDfKUxzgof7fcv_4Os7-doNDRPxzgi1BZLWBfq3ZZtoGDYbP7eBeY9bW37U1b1sqbug/exec'; 
+      
+            const form = document.getElementById('vayuContactForm');
+            const submitBtn = document.getElementById('vayuSubmitBtn');
+
+            if (form && submitBtn) {
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = 'Sending...';
+
+                    fetch(scriptURL, { 
+                        method: 'POST', 
+                        body: new FormData(form)
+                    })
+                    .then(response => {
+                        alert('Thank you! Your message has been sent successfully.');
+                        form.reset();
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = 'Submit Message →';
+                    })
+                    .catch(error => {
+                        console.error('Error!', error && error.message ? error.message : error);
+                        alert('Oops! Something went wrong. Please try again.');
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = 'Submit Message →';
+                    });
+                });
+            } else {
+                console.warn('Contact form or submit button not found on this page.');
+            }
+        </script>
 
 </body>
 

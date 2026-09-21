@@ -182,21 +182,60 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 9. FLOATING CONTACT BUTTONS INJECTION
+    // 9. FLOATING CONTACT BUTTONS INJECTION (only on home page)
     const injectButtons = () => {
-        const floatingDiv = document.createElement('div');
-        floatingDiv.className = 'floating-contact';
-        floatingDiv.innerHTML = `
-            <a href="https://wa.me/918796017652" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="tel:+918796017652" class="floating-btn call-btn" title="Call Us Now">
-                <i class="fas fa-phone-alt"></i>
-            </a>
-        `;
-        document.body.appendChild(floatingDiv);
+        try {
+            // Only show floating buttons on index/home page
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            if (currentPage !== 'index.html' && currentPage !== '') {
+                return; // Don't inject on non-home pages
+            }
+
+            if (!document || !document.body) {
+                // body not ready — try again shortly
+                setTimeout(injectButtons, 200);
+                return;
+            }
+            // Prevent duplicate injection
+            if (document.querySelector('.floating-contact')) return;
+
+            const floatingDiv = document.createElement('div');
+            floatingDiv.className = 'floating-contact';
+            floatingDiv.innerHTML = `
+                <a href="https://wa.me/918796017652" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="tel:0120-4439885" class="floating-btn call-btn" title="Call Us Now">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            `;
+            document.body.appendChild(floatingDiv);
+            
+            // Wait a bit and trigger Font Awesome kit to process the new elements
+            setTimeout(() => {
+                // Use MutationObserver-like approach or direct trigger
+                if (window.FontAwesomeKit) {
+                    window.FontAwesomeKit.dom.i2svg({ node: document.querySelector('.floating-contact') });
+                } else if (window.FontAwesome && window.FontAwesome.dom) {
+                    // Try different Font Awesome methods
+                    if (typeof window.FontAwesome.dom.i2svg === 'function') {
+                        window.FontAwesome.dom.i2svg({ node: document.querySelector('.floating-contact') });
+                    }
+                }
+            }, 500);
+        } catch (err) {
+            console.warn('Floating contact buttons could not be injected:', err);
+        }
     };
-    injectButtons();
+    
+    // Inject buttons after DOM ready and Font Awesome script loads
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(injectButtons, 500);
+        });
+    } else {
+        setTimeout(injectButtons, 500);
+    }
 
 });
 
