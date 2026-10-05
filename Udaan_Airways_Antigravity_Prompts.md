@@ -587,7 +587,7 @@ Dark navy background (#0A1F5C). 5-column grid.
 Column 1 — Company:
   Logo: ✈ "Udaan Airways" (white, large)
   Tagline: "Travel Shine Airways Services India Pvt. Ltd. — NCT & MCA Certified"
-  Address: G-69, G-Block Sector-63, Noida, UP – 201301
+  Address: G-Block, G-Block Sector-63, Noida, UP – 201301
   Phone: 0120-4439885
   Email Info: hr@udaanairways.com
   Email Career: hr@udaanairways.com
@@ -1425,7 +1425,7 @@ RIGHT — 3 Contact Info Cards:
 Card 1 — Office Address:
   Icon: 🏢 (gold, large)
   Label: "HEAD OFFICE"
-  Text: G-69, G-Block Sector-63, Noida, Uttar Pradesh – 201301
+  Text: G-Block, G-Block Sector-63, Noida, Uttar Pradesh – 201301
 
 Card 2 — Email:
   Icon: 📧
@@ -1446,7 +1446,7 @@ SECTION 2: GOOGLE MAP PLACEHOLDER
 Full-width map embed OR a styled placeholder:
   Styled card showing:
   AI Image: "Aerial view of Noida Sector 63 business district, modern office buildings, Google Maps style satellite view"
-  Overlay text: "📍 G-69, G-Block, Sector-63, Noida, UP – 201301"
+  Overlay text: "📍 G-Block, G-Block, Sector-63, Noida, UP – 201301"
   "Get Directions" button (gold)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
